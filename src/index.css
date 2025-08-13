@@ -39,6 +39,17 @@
   margin-top: var(--line-height);
 }
 
+/* Exception for paragraphs inside the introduction div only */
+div[style*="flex: 1"] div[style*="line-height"] p {
+  margin-top: 0;
+}
+
+/* Ensure contact info preserves line breaks */
+.contact-info div[style*="line-height"] p {
+  margin-top: 0;
+  line-height: 1.2 !important;
+}
+
 html {
   display: flex;
   width: 100%;
@@ -114,6 +125,7 @@ a:link, a:visited {
 }
 
 p {
+  line-height: 0.2;
   margin-bottom: var(--line-height);
 }
 
@@ -309,6 +321,7 @@ input, button, textarea {
   -webkit-font-smoothing: inherit;
   -moz-osx-font-smoothing: inherit;
   -webkit-appearance: none;
+  appearance: none;
 }
 
 input[type=checkbox],
