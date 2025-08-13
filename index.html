@@ -11,20 +11,28 @@
 <body>
 <h1 class="title">lothiard.dev</h1>
 <p class="subtitle"></p>
-<table style="width: 100%; border: none;">
-<tr style="vertical-align: top;">
-<td style="border: none; padding: 0;">
+<style>
+.contact-info {
+  text-align: right;
+}
+@media (max-width: 480px) {
+  .contact-info {
+    text-align: left;
+  }
+}
+</style>
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-start;">
+<div style="flex: 1; min-width: 250px; margin-bottom: 10px;">
 <div style="line-height: 0.2;">
 <p>Computer science sophomore,<br/> Aspiring quantitative developer,<br/> C++ enthusiast,<br/> Aura coder<br/></p>
 </div>
-</td>
-<td style="border: none; padding: 0; text-align: right;">
+</div>
+<div class="contact-info" style="flex: 0 0 auto; min-width: 200px;">
 <div style="line-height: 1.2;">
 <p><a href="https://github.com/Lothiard">github</a> | <a href="https://linkedin.com/in/jbrestye">linkedin</a><br/> Contact me at <a href="mailto:jbrestye@gmail.com">jbrestye@gmail.com</a></p>
 </div>
-</td>
-</tr>
-</table>
+</div>
+</div>
 <hr>
 <!-- Add your profile picture here -->
 <!-- ![profile-pic](profile.jpg) -->
